@@ -1,0 +1,11 @@
+replicaCount: 2
+
+image:
+  repository: jcdemo/flaskapp
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: LoadBalancer
+  port: 3000
+  targetPort: 5000
